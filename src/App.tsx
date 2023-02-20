@@ -21,7 +21,7 @@ function App() {
 
     useEffect(() => {
         if (loadedData === false) {
-            fetch("http://localhost:8000/data")
+            fetch("https://thankful-purring-orca.glitch.me/data")
                 .then((res) => res.json())
                 .then((data) => {
                     setChefData(data[0].chefs);
