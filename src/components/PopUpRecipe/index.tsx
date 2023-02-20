@@ -80,8 +80,6 @@ const PopUpRecipe: React.FC<Props> = ({ recipe, onClose }) => {
     }, []);
 
     useOnClickOutside([popUpRef], onClickOutside);
-
-    console.log(selectedDate, "selectedDate");
     return (
         <div className="popUpRecipe" ref={popUpRef}>
             <div className="recipeBanner">
