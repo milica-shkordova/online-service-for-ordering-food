@@ -1,0 +1,160 @@
+@use "../../style/variables" as var;
+@use "../../style/mixins" as mix;
+@use "sass:math";
+
+.recipeCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 33.3%;
+    margin-bottom: var.$gutter-base * 2;
+    cursor: pointer;
+    position: relative;
+
+    .container {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 90%;
+
+        .picture {
+            flex-basis: 40%;
+            width: 100%;
+            position: relative;
+
+            .recipeFoodPhoto {
+                width: 100%;
+                height: 200px;
+                object-position: center;
+                object-fit: cover;
+                border-top-right-radius: math.div(var.$gutter-base, 1.5);
+                border-top-left-radius: math.div(var.$gutter-base, 1.5);
+            }
+
+            .btns {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: math.div(var.$gutter-base, 3);
+                position: absolute;
+                top: 0;
+            }
+
+            .discountIcon {
+                width: 40%;
+                background-color: var.$background-color-recipes;
+                color: var.$background-color-primary;
+                border-radius: math.div(var.$gutter-base, 1.7);
+                margin: math.div(var.$gutter-base, 3);
+                padding: math.div(var.$gutter-base, 8)
+                    math.div(var.$gutter-base, 4);
+                line-height: 1;
+                text-align: center;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+
+        .recipeShortInfo {
+            flex-basis: 60%;
+            height: 100%;
+            border-bottom-right-radius: math.div(var.$gutter-base, 1.5);
+            border-bottom-left-radius: math.div(var.$gutter-base, 1.5);
+            background-color: var.$text-color-secondary;
+            padding: math.div(var.$gutter-base, 1.5) var.$gutter-base
+                math.div(var.$gutter-base, 1.5) var.$gutter-base;
+
+            .recipeName,
+            .recipeRate {
+                margin-bottom: math.div(var.$gutter-base, 4);
+            }
+
+            .name-price {
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                font-size: var.$font-size-medium * 1.05;
+                font-weight: var.$font-weight-bold;
+                flex-basis: 100%;
+
+                .recipeName {
+                    flex-basis: 75%;
+                }
+
+                .recipePrice {
+                    flex-basis: 38%;
+                    color: var.$background-color-primary;
+                }
+            }
+
+            .recipeRate {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                color: var.$background-color-primary;
+                font-size: var.$font-size-small;
+
+                i:not(:last-child) {
+                    margin-right: 6px;
+                }
+            }
+
+            .ingredients {
+                font-size: var.$font-size-small;
+                line-height: 1.3;
+                margin-bottom: math.div(var.$gutter-base, 1.5);
+                min-height: 60px;
+
+                span {
+                    font-weight: var.$font-weight-medium;
+                }
+            }
+
+            .prepareTime {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: var.$gutter-base * 2;
+
+                img {
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+
+    .addToCartBtn {
+        @extend %btn-orange;
+        margin: 0 auto;
+        margin-top: math.div(var.$gutter-base, 1.5);
+        flex-basis: 10%;
+        position: absolute;
+        left: 21%;
+        bottom: 5%;
+    }
+
+    .heartIcon {
+        background-color: #d9d9d9;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 2%;
+        right: 19%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            color: var.$text-color-tertiary;
+            font-size: var.$font-size-big;
+        }
+    }
+
+    .container:not(:last-child) {
+        padding-right: var.$gutter-base * 2;
+    }
+}

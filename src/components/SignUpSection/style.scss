@@ -1,0 +1,43 @@
+@use "../../style/variables" as var;
+@use "../../style/mixins" as mix;
+@use "sass:math";
+
+.section {
+    margin-top: var.$gutter-base * 2;
+
+    .welcomeNotes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .thankYouNote {
+            font-family: var.$font-family-primary;
+            font-size: var.$heading-size-medium;
+            padding: 0 10px;
+        }
+
+        .goodLuckNote {
+            font-size: var.$font-size-medium;
+            margin: var.$gutter-base * 1.5;
+            width: 60%;
+            text-align: center;
+        }
+
+        .signUpBtn {
+            @extend %btn-orange;
+            margin-bottom: var.$gutter-base * 2;
+        }
+    }
+
+    .leafPic {
+        margin-bottom: var.$gutter-base * 4;
+        .transitionFruitLine {
+            .img {
+                img {
+                    width: 120px;
+                }
+            }
+        }
+    }
+}

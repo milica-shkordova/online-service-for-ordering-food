@@ -1,0 +1,189 @@
+@use "../../style/variables" as var;
+@use "../../style/mixins" as mix;
+@use "sass:math";
+
+.homepage {
+    background-image: url(../../assets/images/bg-homepage.png);
+
+    .container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .ourValues,
+        .meetOurChefs,
+        .reviewers {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-top: 50px;
+
+            a {
+                text-decoration: none;
+                margin: 0 auto;
+            }
+
+            .findMoreBtn,
+            .toChefs {
+                @extend %btn-orange;
+                margin: 80px auto 50px auto;
+            }
+        }
+
+        .full {
+            border: 1px solid var.$text-color-tertiary;
+            opacity: 0.8;
+            width: 100%;
+        }
+
+        .statistics {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                width: 60px;
+                opacity: 0.5;
+                margin: math.div(var.$gutter-base, 1.3) 0
+                    math.div(var.$gutter-base, 1.7);
+            }
+
+            p {
+                font-family: var.$font-family-primary;
+                font-size: var.$heading-size-medium;
+                margin-bottom: math.div(var.$gutter-base, 1.5);
+            }
+
+            h2 {
+                font-size: var.$heading-size-big;
+                color: var.$text-color-quaternary;
+            }
+
+            .satisfiedCustomers,
+            .cookedMeals,
+            .happyChefs {
+                flex-basis: 33.33%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .transitionFruitLine hr {
+            border: 1px solid var.$text-color-tertiary;
+            opacity: 0.8;
+        }
+
+        .join {
+            h1 {
+                font-weight: var.$font-weight-regular;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                font-family: var.$font-family-base;
+                font-size: var.$heading-size-big;
+                text-align: center;
+                margin-bottom: var.$gutter-base * 2;
+
+                span {
+                    color: var.$text-color-tertiary;
+                }
+            }
+
+            .icons-join-us {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .join-us-icon-1,
+                .join-us-icon-2 {
+                    flex-basis: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        font-size: var.$font-size-medium;
+                        margin-top: math.div(var.$gutter-base, 2);
+                        margin-bottom: var.$gutter-base;
+                    }
+
+                    img {
+                        width: 120px;
+                        height: 120px;
+                    }
+                }
+            }
+        }
+
+        .transition {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var.$gutter-base;
+
+            hr {
+                flex-basis: 44%;
+                border: 1px solid var.$text-color-tertiary;
+                opacity: 0.8;
+            }
+        }
+
+        .steps-part {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .client-user,
+            .chef-user {
+                flex-basis: 40%;
+
+                .steps {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .step-icon {
+                        flex: 0 0 20%;
+                        text-align: center;
+                    }
+
+                    .step-info {
+                        flex: 0 1 80%;
+
+                        .readMoreAbout {
+                            color: var.$text-color-tertiary;
+                        }
+                    }
+                }
+
+                .steps:not(:last-child) {
+                    margin-bottom: var.$gutter-base;
+                }
+            }
+
+            .join-buttons {
+                flex-basis: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: var.$gutter-base * 4;
+
+                .become-a-client,
+                .become-a-chef {
+                    flex-basis: 40%;
+                    display: flex;
+                    justify-content: center;
+
+                    button {
+                        @extend %btn-orange;
+                        width: 200px;
+                        margin-top: var.$gutter-base;
+                    }
+                }
+            }
+        }
+    }
+}

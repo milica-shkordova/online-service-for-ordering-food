@@ -1,0 +1,137 @@
+@use "../../style/variables" as var;
+@use "../../style/mixins" as mix;
+@use "sass:math";
+
+.card {
+    width: 31.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+
+    .picture-part {
+        width: 100%;
+        position: relative;
+
+        .chef-pic {
+            width: 100%;
+            height: 400px;
+            object-position: center;
+            object-fit: cover;
+        }
+
+        .badge {
+            position: absolute;
+            z-index: 11111;
+            width: 70px;
+            display: flex;
+            top: -20px;
+            right: 0;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .picture-part .chef-pic,
+    .info-part {
+        border-radius: 15px;
+        border: none;
+    }
+
+    .info-part {
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        background-color: var.$background-color-card;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16);
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: math.div(var.$gutter-base, 1.4);
+
+        .rows {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            .nameInfo {
+                flex-basis: 60%;
+                margin: 0;
+                font-size: math.div(var.$font-size-medium, 1.05);
+                font-weight: var.$font-weight-medium;
+                padding: 0;
+            }
+
+            .reviews-stars {
+                flex-basis: 35%;
+                width: 100%;
+                color: var.$text-color-tertiary;
+                font-size: var.$font-size-medium;
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .left-content,
+            .right-content {
+                flex-basis: 45%;
+            }
+
+            .left-content {
+                color: var.$text-color-card;
+                margin-top: math.div(var.$gutter-base, 3);
+                font-weight: var.$font-weight-regular;
+            }
+
+            .right-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                height: 100%;
+
+                .location-distance,
+                btn-findMore {
+                    flex-basis: 40%;
+                }
+
+                .location-distance {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    padding: math.div(var.$gutter-base, 2.8);
+
+                    img {
+                        margin-right: math.div(var.$gutter-base, 3);
+                    }
+                }
+
+                .btn-findMore {
+                    background-color: var.$background-color-card;
+                    border: 2px solid var.$text-color-tertiary;
+                    border-radius: math.div(var.$gutter-base, 2);
+                    padding: math.div(var.$gutter-base, 10)
+                        math.div(var.$gutter-base, 3);
+
+                    @media (max-width: 1430px) {
+                        font-size: var.$font-size-small;
+                    }
+                }
+            }
+        }
+    }
+}

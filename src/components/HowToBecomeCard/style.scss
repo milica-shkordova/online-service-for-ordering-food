@@ -1,0 +1,28 @@
+@use "../../style/variables" as var;
+@use "../../style/mixins" as mix;
+@use "sass:math";
+
+.howToBecomeCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var.$gutter-base * 2.5;
+
+    .picture {
+        width: 80px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .text-content {
+        flex-basis: 80%;
+
+        .howToBecome-title {
+            font-size: var.$font-size-medium;
+            font-weight: var.$font-weight-bold;
+            margin-bottom: math.div(var.$gutter-base, 3.5);
+        }
+    }
+}

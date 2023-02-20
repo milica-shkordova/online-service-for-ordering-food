@@ -1,0 +1,34 @@
+@use "../../style/variables" as var;
+@use "../../style/mixins" as mix;
+
+.valueCircleCard {
+    flex-basis: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .valuePic { 
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.25);
+
+        img.circleImg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .valuesTitle {
+        font-family: var.$font-family-primary;
+        font-size: var.$heading-size-medium;
+        margin-top: 20px;
+        margin-bottom: 7px;
+    }
+
+    .valuesInfo {
+        font-weight: var.$font-weight-medium;
+    }
+}

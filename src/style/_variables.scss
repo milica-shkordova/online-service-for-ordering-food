@@ -1,0 +1,57 @@
+@use "sass:math";
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+@function rem-calc($size) {
+    @return (math.div($size, 16)) * 1rem;
+}
+
+// Font settings
+$font-family-base: "Roboto", sans-serif;
+$font-family-primary: "Bad Script", cursive;
+
+$font-size-tiny: rem-calc(12);
+$font-size-small: rem-calc(14);
+$font-size-base: rem-calc(16);
+$font-size-medium: rem-calc(18);
+$font-size-big: rem-calc(22);
+
+$heading-size-small: rem-calc(24);
+$heading-size-medium: rem-calc(32);
+$heading-size-base: rem-calc(36);
+$heading-size-big: rem-calc(48);
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+$line-height-base: 1.5;
+$line-height-small: 1.25;
+
+// Size settings
+$gutter-base: rem-calc(30);
+
+// Border settings
+$border-width-base: rem-calc(1);
+$border-radius-base: rem-calc(4);
+$border-radius-circle: 50%;
+
+// Color settings
+$text-color-primary: #000000;
+$text-color-secondary: #ffffff;
+$text-color-tertiary: #f1592a;
+$text-color-quaternary: #fe724d;
+$text-color-quinary: #7c7c7c;
+$text-color-senary: #bcbcbc;
+$text-color-septenary: #d7d7d7;
+$text-color-card: #ef7204;
+$background-color-base: #fff8f0;
+$background-color-base-header: #f1f1f1;
+$background-color-base-footer: #262d2f;
+$background-color-primary: #fe724d;
+$background-color-secondary: #ecdb9d;
+$background-color-tertiary: #fe724d66;
+$background-color-card: #fff2e2;
+$background-color-menu: #fff8f0;
+$background-color-recipes: #f8f1e9;

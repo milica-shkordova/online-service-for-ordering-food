@@ -1,0 +1,52 @@
+@use "../../style/variables" as var;
+@use "../../style/mixins" as mix;
+@use "sass:math";
+
+.reviewSimpleCommentCard {
+    flex-basis: 30%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var.$gutter-base;
+    padding: var.$gutter-base * 1.5 math.div(var.$gutter-base, 2);
+    position: relative;
+    border-radius: math.div(var.$gutter-base, 1.5);
+    background-color: var.$text-color-secondary;
+    margin-right: 3%;
+    text-align: center;
+
+    .reviewerNameInfo {
+        font-size: var.$font-size-medium * 1.05;
+        font-weight: var.$font-weight-bold;
+        margin-bottom: math.div(var.$gutter-base, 2);
+        text-align: center;
+        flex-basis: 30%;
+    }
+
+    .comment {
+        font-style: italic;
+        font-size: var.$font-size-small;
+        flex-basis: 70%;
+    }
+
+    .heartIcon {
+        background-color: #d9d9d9;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 6%;
+        left: 6%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        i {
+            color: var.$text-color-tertiary;
+            font-size: var.$font-size-big;
+        }
+    }
+}

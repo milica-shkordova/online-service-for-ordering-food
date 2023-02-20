@@ -1,0 +1,36 @@
+@use "../../style/variables" as var;
+@use "../../style/mixins" as mix;
+@use "sass:math";
+
+.accordionCard {
+    border: 1px solid var.$background-color-primary;
+    border-radius: math.div(var.$gutter-base, 2);
+    padding: math.div(var.$gutter-base, 1.5);
+    cursor: pointer;
+
+    .accordion-title {
+        font-size: var.$font-size-medium;
+        font-weight: var.$font-weight-bold;
+        display: flex;
+        justify-content: space-between;
+
+        .icon {
+            background-color: var.$background-color-primary;
+            color: var.$text-color-secondary;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            i {
+                font-size: var.$font-size-small;
+            }
+        }
+    }
+
+    .accordion-content {
+        margin-top: math.div(var.$gutter-base, 2.5);
+    }
+}

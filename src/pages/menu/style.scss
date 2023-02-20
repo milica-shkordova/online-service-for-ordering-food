@@ -1,0 +1,288 @@
+@use "../../style/variables" as var;
+@use "../../style/mixins" as mix;
+@use "sass:math";
+
+.menu {
+    background-color: var.$background-color-menu;
+    padding: var.$gutter-base;
+
+    input {
+        accent-color: var.$background-color-primary;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+    }
+
+    .titles {
+        margin-top: var.$gutter-base;
+
+        p {
+            font-size: var.$heading-size-big;
+            padding: 0 var.$gutter-base * 1.5;
+        }
+    }
+
+    .chooseMealType {
+        padding: 0 var.$gutter-base * 1.5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        i {
+            color: var.$background-color-primary;
+            font-size: var.$gutter-base;
+            flex-basis: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menuChoice {
+            padding: 0 var.$gutter-base;
+            flex-basis: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .menu-part {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+
+                .menu-img,
+                .meal {
+                    flex-basis: 50%;
+                }
+
+                .menu-img {
+                    img {
+                        width: 38px;
+                    }
+                }
+
+                .meal {
+                    padding-left: 10px;
+                    font-weight: var.$font-weight-bold;
+                    font-size: var.$font-size-medium;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+
+    .menu-preview {
+        margin-top: var.$gutter-base * 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .filters {
+            flex-basis: 17%;
+            background-color: var.$background-color-card;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 9px;
+            padding: math.div(var.$gutter-base, 2) var.$gutter-base;
+            position: relative;
+
+            .address {
+                background-color: white;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                outline: none;
+                border-radius: 9px;
+                border: none;
+                width: 100%;
+                font-weight: var.$font-weight-regular;
+                font-size: var.$font-size-tiny;
+                font-family: var.$font-family-base;
+                margin: 0 auto;
+                display: block;
+                padding: 7% 4px 7% 40px;
+                background: white url("../../assets/images/location.png")
+                    no-repeat 18px center;
+                -webkit-appearance: none;
+                margin-bottom: math.div(var.$gutter-base, 2);
+            }
+
+            .arrowDown {
+                z-index: 255;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                cursor: pointer;
+                left: 77%;
+                top: 24px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .address::placeholder {
+                padding-left: 25%;
+                font-size: math.div(var.$gutter-base, 2);
+                color: rgb(196, 189, 189);
+            }
+
+            .available-now,
+            .available-tomorrow,
+            .available-afterOrder {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: math.div(var.$gutter-base, 2);
+            }
+
+            .slider {
+                color: var.$background-color-primary;
+            }
+
+            .priceFilter {
+                .css-187mznn-MuiSlider-root {
+                    border-radius: 11px;
+                    box-sizing: content-box;
+                    display: inline-block;
+                    position: relative;
+                    cursor: pointer;
+                    -webkit-tap-highlight-color: transparent;
+                    height: 14px;
+                    width: 100%;
+                    padding: 7px 0;
+                }
+
+                .css-14pt78w-MuiSlider-rail {
+                    background-color: #aaa49d;
+                    opacity: 0.45;
+                }
+                .css-eg0mwd-MuiSlider-thumb::active,
+                .css-eg0mwd-MuiSlider-thumb::hover,
+                .css-eg0mwd-MuiSlider-thumb.Mui-focusVisible {
+                    box-shadow: none;
+                }
+
+                .css-eg0mwd-MuiSlider-thumb {
+                    width: 14px;
+                    height: 14px;
+                }
+                .css-eg0mwd-MuiSlider-thumb::active {
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    border-top-right-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                }
+                .priceRange {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: -12px;
+                }
+            }
+
+            .alergensFilter {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .alergeni {
+                    flex-basis: 100%;
+                    margin-bottom: math.div(var.$gutter-base, 2);
+                }
+
+                .alergen {
+                    background-color: var.$background-color-base;
+                    color: var.$background-color-primary;
+                    outline: none;
+                    border: none;
+                    border-radius: 8px;
+                    margin-bottom: 10px;
+                }
+
+                .active {
+                    background-color: var.$background-color-primary;
+                    color: white;
+                }
+            }
+        }
+
+        .filtered-cards {
+            flex-basis: 80%;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-wrap: wrap;
+            border-top: 1px solid #d9d9d9;
+            border-left: 1px solid #d9d9d9;
+            padding-top: var.$gutter-base;
+            padding-left: var.$gutter-base;
+
+            .showMoreBtn {
+                display: block;
+                margin: 0 auto;
+                @extend %btn-orange;
+            }
+        }
+
+        .ratingFilter {
+            .rate {
+                margin-bottom: math.div(var.$gutter-base, 2);
+            }
+
+            .starsFilter {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .rating-input {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-basis: 25%;
+
+                    label {
+                        font-weight: var.$font-weight-medium;
+                    }
+                }
+
+                .stars {
+                    flex-basis: 75%;
+                    i {
+                        color: var.$background-color-primary;
+                    }
+
+                    i:not(:last-child) {
+                        margin-right: 7px;
+                    }
+                }
+            }
+        }
+
+        .delivery-filter {
+            .delivery,
+            .pickUp {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: math.div(var.$gutter-base, 4);
+
+                p,
+                .chooseOption {
+                    flex-basis: 50%;
+                }
+
+                .chooseOption {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    label {
+                        img {
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

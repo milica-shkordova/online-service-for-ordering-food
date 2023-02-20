@@ -1,0 +1,82 @@
+@use "../../style/variables" as var;
+@use "../../style/mixins" as mix;
+
+.navbar {
+    font-family: var.$font-family-base;
+    height: 70px;
+    background-color: var.$background-color-base-header;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 30px;
+
+    li {
+        cursor: pointer;
+    }
+    .menu-left,
+    .menu-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        a {
+            text-decoration: none;
+        }
+
+        .clicked {
+            font-weight: var.$font-weight-bold;
+        }
+    }
+
+    .menu-left {
+        flex-basis: 40%;
+    }
+
+    .menu-right {
+        flex-basis: 30%;
+
+        p.profil {
+            margin: 0;
+        }
+
+        .search-input {
+            width: 60%;
+
+            input {
+                height: 25px;
+                width: 100%;
+                padding: 3px 7px;
+                border: 1px solid #7d7d7d;
+                border-radius: 14px;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            }
+        }
+    }
+
+    li.icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .pic {
+            height: 30px;
+
+            img {
+                height: 100%;
+            }
+        }
+        p {
+            font-size: var.$font-size-tiny;
+            color: var.$text-color-quinary;
+            margin: 5px 0 0 0;
+
+            &.active {
+                font-weight: bold;
+            }
+        }
+    }
+}

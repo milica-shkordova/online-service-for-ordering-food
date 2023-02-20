@@ -1,0 +1,28 @@
+@use "../../style/variables" as var;
+@use "../../style/mixins" as mix;
+@use "sass:math";
+
+.popUpRecipeAccordion {
+    .dishInfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        padding: 0 var.$gutter-base * 1.5 0 var.$gutter-base;
+        font-size: var.$font-size-big * 1.1;
+        flex-wrap: wrap;
+
+        i {
+            color: var.$text-color-quinary;
+        }
+
+        .dishDetailInfo {
+            flex-basis: 100%;
+            font-size: var.$font-size-medium;
+            margin-top: math.div(var.$gutter-base, 3);
+        }
+
+        .info {
+            flex-basis: 50%;
+        }
+    }
+}

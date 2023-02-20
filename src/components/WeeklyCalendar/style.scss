@@ -1,0 +1,59 @@
+@use "../../style/variables" as var;
+@use "../../style/mixins" as mix;
+@use "sass:math";
+
+.weeklyCalendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 63%;
+    margin: math.div(var.$gutter-base, 1.6) auto var.$gutter-base * 1.5;
+
+    i {
+        flex-basis: 3%;
+        font-size: var.$heading-size-big;
+        color: var.$background-color-primary;
+        text-align: center;
+        cursor: pointer;
+    }
+    .calendar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 90%;
+        margin: 0 auto;
+
+        .dayBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: math.div(var.$gutter-base, 1.9);
+            width: 13%;
+            color: #afaaaa;
+            background-color: var.$text-color-secondary;
+            border-bottom: math.div(var.$gutter-base, 7.5) solid #a4a4a4;
+            box-shadow: math.div(var.$gutter-base, 6)
+                math.div(var.$gutter-base, 6) math.div(var.$gutter-base, 6)
+                math.div(var.$gutter-base, 12) rgba(0, 0, 0, 0.25);
+            border-radius: math.div(var.$gutter-base, 2);
+            font-size: var.$font-size-small;
+            font-weight: var.$font-weight-bold;
+            cursor: pointer;
+
+            .number {
+                font-size: var.$font-size-big;
+            }
+        }
+
+        .dayBox:not(:last-child) {
+            margin-right: math.div(var.$gutter-base, 3);
+        }
+
+        .active {
+            color: var.$background-color-primary;
+            border-color: var.$background-color-primary;
+        }
+    }
+}

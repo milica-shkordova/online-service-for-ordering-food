@@ -1,0 +1,953 @@
+{
+    "data": [
+        {
+            "chefs": [
+                {
+                    "id": 1,
+                    "first_name": "Aна",
+                    "last_name": "Спирова",
+                    "address": "Карпош",
+                    "phone": "074550050",
+                    "chef_photo": "https://thumbs.dreamstime.com/b/female-chef-holding-plate-prepared-pasta-kitchen-female-chef-holding-plate-prepared-pasta-kitchen-hotel-135827202.jpg",
+                    "bio": "Израснав со традиционалната храна која секојдневно ни ја приготвуваше мајка ми во семејството. Оттаму и мојата љубов и желба да ја продолжам фамилијарната традиција, притоа додавајќи намирници и зачини кои доловуваат уникатен вкус на секој оброк кој го приготвувам. ",
+                    "food_badge": false,
+                    "rating": 4,
+                    "workOnSunday": true,
+                    "cuisines": ["Традиционална"],
+                    "bannerPhoto": "https://madamelefo.com/wp-content/uploads/2019/04/14-Mala-Gostionica-Beograd-Restorani-u-Beogradu-Najbolja-hrana-u-gradu-c.jpg"
+                },
+                {
+                    "id": 2,
+                    "first_name": "Дејан",
+                    "last_name": "Панчевски",
+                    "address": "Аеродром",
+                    "phone": "074550050",
+                    "chef_photo": "https://nationaltoday.com/wp-content/uploads/2021/07/shutterstock_1518533924-min.jpg",
+                    "bio": "Трпезите секогаш биле полни со вкусни јадења подготвени од рацете на мајка ми. Паметам еден ден кога мајка ми ми рече -Ни доаѓаат гости, ќе го спремиш ти десертот, во ред? Во тој момент бев почестен од тој коментар бидејќи веруваше во мене, па не смеев да направам грешка. На овој начин го подготвив првиот рецепт самостојно.",
+                    "food_badge": true,
+                    "rating": 4.4,
+                    "workOnSunday": false,
+                    "cuisines": ["Мексичка", "Италијанска"],
+                    "bannerPhoto": "https://www.paesana.com/hubfs/Blog/Chicken%20Parmesan%20with%20Ziti%20and%20Mexican%20Tacos%20displayed%20on%20countertop.jpg"
+                },
+                {
+                    "id": 3,
+                    "first_name": "Стефи",
+                    "last_name": "Стојановска",
+                    "address": "Дебар Маало",
+                    "phone": "074550050",
+                    "chef_photo": "https://assets3.thrillist.com/v1/image/1718972/828x610/flatten;crop;webp=auto;jpeg_quality=60.jpg",
+                    "bio": "Вкусот на Италија е во моите чинии! Уживајте!",
+                    "food_badge": true,
+                    "rating": 5,
+                    "workOnSunday": true,
+                    "cuisines": ["Италијанска"],
+                    "bannerPhoto": "https://www.tastingtable.com/img/gallery/20-italian-dishes-you-need-to-try-at-least-once/l-intro-1643403830.jpg"
+                },
+                {
+                    "id": 4,
+                    "first_name": "Јордан",
+                    "last_name": "Цветковски",
+                    "address": "Карпош",
+                    "phone": "074550050",
+                    "chef_photo": "https://www.shutterstock.com/image-photo/chef-leaning-on-counter-dish-260nw-399217630.jpg",
+                    "bio": "Искуството што го собрав од кујните низ светот ви го поклонувам вам! Оставете коментари како ви се допаднало :)",
+                    "food_badge": true,
+                    "rating": 4.2,
+                    "workOnSunday": true,
+                    "cuisines": ["Риба", "Кинеска"],
+                    "bannerPhoto": "https://www.qld.gov.au/__data/assets/image/0039/169779/sushi_plate.jpg"
+                },
+                {
+                    "id": 5,
+                    "first_name": "Kристина",
+                    "last_name": "Ригс",
+                    "address": "Влае",
+                    "phone": "074550050",
+                    "chef_photo": "https://c4.wallpaperflare.com/wallpaper/152/688/948/girl-smile-eggs-milk-wallpaper-preview.jpg",
+                    "bio": "Готвењето ми претставува задоволство. На нашето мени се наоѓаат најразлични десерти со интересни вкусови од кои нема да останете рамнодушни!",
+                    "food_badge": false,
+                    "rating": 4,
+                    "workOnSunday": false,
+                    "cuisines": ["Традиционална"],
+                    "bannerPhoto": "https://media-cdn.tripadvisor.com/media/photo-m/1280/1a/8b/d9/d7/zavicaj-restaurant-bohemian.jpg"
+                },
+                {
+                    "id": 6,
+                    "first_name": "Јана",
+                    "last_name": "Додевска",
+                    "address": "Автокоманда",
+                    "phone": "074550050",
+                    "chef_photo": "https://www.dusttexhonolulu.com/wp-content/uploads/2018/12/chef-uniforms.jpg",
+                    "bio": "Трпезите секогаш биле полни со вкусни јадења кај нас дома, а тоа секогаш ми било инспирација да бидам јас уште подобар готвач. Така се роди љубовта према готвењето која ви ја предавам вас преку моите зготвени јадења.",
+                    "food_badge": true,
+                    "rating": 4,
+                    "workOnSunday": true,
+                    "cuisines": ["Индиска"],
+                    "bannerPhoto": "https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/l-intro-1645057933.jpg"
+                }
+            ],
+            "recipes": [
+                {
+                    "id": 1,
+                    "chefId": 1,
+                    "recipe_name": "Селско месо",
+                    "cuisine": "Традиционална",
+                    "icon_type": "месо",
+                    "meal_type": "главно јадење",
+                    "photo": "https://receptizahrana.com/wp-content/uploads/2021/02/selsko-meso.jpg",
+                    "cook_time": "2 часа",
+                    "spicy": "пикантно",
+                    "available_portions": 3,
+                    "available": ["денес", "по нарачка"],
+                    "meal_info": "Топлата порција селско месо, освен што ни го стоплува телото во зимскиот период, воедно и ни ја стоплува и душата бидејќи се потсетуваме на сите убави мигови поминати со најблиските.",
+                    "main_ingredients": [
+                        "телешко месо",
+                        "свинско месо",
+                        "мелено месо",
+                        "лебни трошки",
+                        "шампињони",
+                        "брашно",
+                        "жолчка"
+                    ],
+                    "nutrition_values": [
+                        "калциум",
+                        "железо",
+                        "магнезиум",
+                        "фосфор",
+                        "протеин"
+                    ],
+                    "allergens": ["сулфити", "глутен", "млеко"],
+                    "price": 480,
+                    "discount": 20,
+                    "delivery": "достава",
+                    "rate": 4
+                },
+                {
+                    "id": 2,
+                    "chefId": 1,
+                    "recipe_name": "Пастрмајлија",
+                    "cuisine": "Традиционална",
+                    "icon_type": "пица",
+                    "meal_type": "главно јадење",
+                    "photo": "https://i0.wp.com/daves-kitchen.com/wp-content/uploads/2020/11/IMG_0594.jpg?resize=750%2C500&ssl=1",
+                    "cook_time": "1ч 30мин",
+                    "spicy": "не лути",
+                    "available_portions": 2,
+                    "available": ["денес", "утре", "по нарачка"],
+
+                    "meal_info": "Се потрудив да Ви ја илустрирам со вистинската фотографија, со цел што поживописно да ја доловам нејзината грандиозност. Мојата омилена комбинација е со пилешко бело месо, но вие може да го користите она месо кое најмногу ви се допаѓа.",
+                    "main_ingredients": [
+                        "пилешки стек",
+                        "јајца",
+                        "кашкавал",
+                        "млеко",
+                        "свинска маст",
+                        "магдонос",
+                        "брашно"
+                    ],
+                    "nutrition_values": ["фосфор", "калиум", "протеин"],
+                    "allergens": ["сулфити", "глутен", "млеко"],
+                    "price": 270,
+                    "discount": 0,
+                    "delivery": "достава",
+                    "rate": 3
+                },
+                {
+                    "id": 3,
+                    "chefId": 1,
+                    "recipe_name": "Васина торта",
+                    "cuisine": "Традиционална",
+                    "icon_type": "десерт",
+                    "meal_type": "десерт",
+                    "photo": "https://i0.wp.com/daves-kitchen.com/wp-content/uploads/2021/01/wp-1609693139700.jpg?resize=750%2C500&ssl=1",
+                    "cook_time": "2ч 30мин",
+                    "spicy": "не лути",
+                    "available_portions": 10,
+                    "available": ["денес", "по нарачка"],
+
+                    "meal_info": "Старата добра Васина торта е вистинска кралица на тортите. Многумина од нас пораснаа со нејзиниот препознатлив вкус бидејќи своевремено ова беше една од најчесто правените торти за родендени и најразлични празници. Велат дека она што е Захер тортата во Виена, тоа е Васина торта на нашите простори.",
+                    "main_ingredients": [
+                        "јајца",
+                        "шеќер",
+                        "ореви",
+                        "млеко",
+                        "брашно",
+                        "путер",
+                        "мед"
+                    ],
+                    "nutrition_values": ["јаглехидрати", "масти", "фосфор"],
+                    "allergens": ["млеко", "глутен", "јатки", "мед"],
+                    "price": 220,
+                    "discount": 10,
+                    "delivery": "достава",
+                    "rate": 5
+                },
+                {
+                    "id": 4,
+                    "chefId": 2,
+                    "recipe_name": "Зачинето говедско месо и тортиљи",
+                    "cuisine": "Мексичка",
+                    "icon_type": "тортиљи",
+                    "meal_type": "главно јадење",
+                    "photo": "https://images.everyplate.com/c_fill,f_auto,fl_lossy,h_700,q_auto,w_1400/everyplate_s3/image/tex-mex-beef-tortilla-bake-18b2145f.jpg",
+                    "cook_time": "35 мин",
+                    "spicy": "пикантно",
+                    "available_portions": 6,
+                    "available": ["денес", "по нарачка"],
+
+                    "meal_info": "Зачинето говедско месо и тортиљите се совпаѓање направено во рајот и оваа тортиља инспирирана од Мексико се надополнува. Сочното говедско месо се става во слоеви помеѓу меки тортиљи, зеленчук и сирење и се пече додека не стане боја шампањ. Киселата павлака дава ладење и кремаста завршница.",
+                    "main_ingredients": [
+                        "говедско месо",
+                        "чедар",
+                        "кромид",
+                        "кисела павлака",
+                        "пиперки",
+                        "тортиљи",
+                        "доматен сос"
+                    ],
+                    "nutrition_values": [
+                        "Масти",
+                        "Јаглехидрати",
+                        "Протеини",
+                        "Холестерол",
+                        "Натриум"
+                    ],
+                    "allergens": ["сулфити", "глутен", "млеко"],
+                    "price": 520,
+                    "discount": 0,
+                    "delivery": "подигање",
+                    "rate": 5
+                },
+                {
+                    "id": 5,
+                    "chefId": 2,
+                    "recipe_name": "Свински такос - карнитас",
+                    "cuisine": "Мексичка",
+                    "icon_type": "такос",
+                    "meal_type": "предјадење",
+                    "photo": "https://images.everyplate.com/c_fill,f_auto,fl_lossy,h_700,q_auto,w_1400/everyplate_s3/image/carnitas-style-pork-tacos-a95c9cbd.jpg",
+                    "cook_time": "25 мин",
+                    "spicy": "многу луто",
+                    "available_portions": 0,
+                    "available": ["утре", "по нарачка"],
+
+                    "meal_info": "Овие зачадени и солени такос позајмуваат вкусови од традиционалните мексикански карнити, без бавно динстање! Сочното свинско месо е вкусно зачинето и зготвено со поблано пиперки, со што ја носи вистинската количина на топлина. Слаткиот кисел кромид и зачадената крема го скротуваат огнот.",
+                    "main_ingredients": [
+                        "свинско месо",
+                        "тортиљи",
+                        "кромид",
+                        "лук",
+                        "шери домати",
+                        "текс-мекс паста",
+                        "оцет",
+                        "поблано пиперки",
+                        "кисела павлака"
+                    ],
+                    "nutrition_values": [
+                        "масти",
+                        "јаглехидрати",
+                        "шеќер",
+                        "холестерол",
+                        "протеини",
+                        "натриум"
+                    ],
+                    "allergens": ["сенф", "глутен", "млеко", "сулфити"],
+                    "price": 290,
+                    "discount": 0,
+                    "delivery": "подигање",
+                    "rate": 5
+                },
+                {
+                    "id": 6,
+                    "chefId": 2,
+                    "recipe_name": "Тестенини со говедско месо",
+                    "cuisine": "Италијанска",
+                    "icon_type": "паста",
+                    "meal_type": "главно јадење",
+                    "photo": "https://images.everyplate.com/c_fill,f_auto,fl_lossy,h_700,q_auto,w_1400/everyplate_s3/image/cheesy-beef-pasta-bake-b2f2e77e.jpg",
+                    "cook_time": "30 мин",
+                    "spicy": "не лути",
+                    "available_portions": 4,
+                    "available": ["денес", "утре", "по нарачка"],
+
+                    "meal_info": "Сакате говедски лазањи, но не и вревата? Наместо тоа, направете тестенини за печење! Тоа е сè што сакате кај класичното јадење, но полесно и побрзо се прави. Ќе ви се допадне гурманскиот сос од домати и стопената вкусна добрина во секоја залак.",
+                    "main_ingredients": [
+                        "говедско месо",
+                        "магдонос",
+                        "кромид",
+                        "маринара сос",
+                        "моцарела",
+                        "пене",
+                        "спанаќ"
+                    ],
+                    "nutrition_values": [
+                        "масти",
+                        "јаглехидрати",
+                        "шеќер",
+                        "холестерол",
+                        "протеини",
+                        "натриум"
+                    ],
+                    "allergens": ["глутен", "млеко"],
+                    "price": 280,
+                    "discount": 10,
+                    "delivery": "подигање",
+                    "rate": 3
+                },
+                {
+                    "id": 7,
+                    "chefId": 3,
+                    "recipe_name": "Тестенини со мисиркино песто и спанаќ",
+                    "cuisine": "Италијанска",
+                    "icon_type": "паста",
+                    "meal_type": "главно јадење",
+                    "photo": "https://images.everyplate.com/c_fill,f_auto,fl_lossy,h_700,q_auto,w_1400/everyplate_s3/image/creamy-pesto-turkey-pasta-995a45b7.jpg",
+                    "cook_time": "20 мин",
+                    "spicy": "пикантно",
+                    "available_portions": 0,
+                    "available": ["по нарачка"],
+
+                    "meal_info": "Донесете дома малку вкус на Италија, но со полесен протеин од вообичаениот во ова раскошно јадење со тестенини со мисирки!",
+                    "main_ingredients": [
+                        "мисиркино месо",
+                        "спанаќ",
+                        "пармезан",
+                        "хопла",
+                        "кромид",
+                        "песто босилек"
+                    ],
+                    "nutrition_values": [
+                        "Протеини",
+                        "Холестерол",
+                        "Натриум",
+                        "Масти"
+                    ],
+                    "allergens": ["соја", "глутен", "млеко"],
+                    "price": 270,
+                    "discount": 15,
+                    "delivery": "достава",
+                    "rate": 5
+                },
+                {
+                    "id": 8,
+                    "chefId": 3,
+                    "recipe_name": "Пицa oд растително тесто со пржен зеленчук",
+                    "cuisine": "Италијанска",
+                    "icon_type": "пица",
+                    "meal_type": "главно јадење",
+                    "photo": "https://images.everyplate.com/c_fill,f_auto,fl_lossy,h_700,q_auto,w_1400/everyplate_s3/image/deluxe-veggie-flatbread-pizzas-d8218195.jpg",
+                    "cook_time": "30 мин",
+                    "spicy": "не лути",
+                    "available_portions": 4,
+                    "available": ["денес", "по нарачка"],
+
+                    "meal_info": "Внесете го овој леб подготвен за ристоранти, кој е обилно натрупан со сочни печурки, пиперки, кромид и маслинки пред да се наполни со жилаво моцарела сирење. Не заборавајте да ставите сос од лук!",
+                    "main_ingredients": [
+                        "тесто за пица",
+                        "мозарела",
+                        "домат",
+                        "кромид",
+                        "пиперки",
+                        "шампињони",
+                        "луг",
+                        "доматен сос",
+                        "маслинки",
+                        "мајонез"
+                    ],
+                    "nutrition_values": [
+                        "Јаглехидрати",
+                        "шеќер",
+                        "протеин",
+                        "холестерол",
+                        "натриум",
+                        "масти"
+                    ],
+                    "allergens": [
+                        "сенф",
+                        "соја",
+                        "глутен",
+                        "јајца",
+                        "млеко",
+                        "сулфити"
+                    ],
+                    "price": 390,
+                    "discount": 7,
+                    "delivery": "достава",
+                    "rate": 5
+                },
+                {
+                    "id": 9,
+                    "chefId": 3,
+                    "recipe_name": "Свежа рикота и веге тестенини со доматен сос",
+                    "cuisine": "Италијанска",
+                    "icon_type": "паста",
+                    "meal_type": "главно јадење",
+                    "photo": "https://images.everyplate.com/c_fill,f_auto,fl_lossy,h_700,q_auto,w_1400/everyplate_s3/image/fresh-ricotta-veggie-pasta-57da71aa.jpg",
+                    "cook_time": "20 мин",
+                    "spicy": "пикантно",
+                    "available_portions": 7,
+                    "available": ["денес", "утре", "по нарачка"],
+
+                    "meal_info": "Тајната е сè во сосот, кој добива поттик од нашето песто од сушен домат, додавајќи богатство и димензија што го носи овој оброк на следното ниво!",
+                    "main_ingredients": [
+                        "рикота",
+                        "фусили",
+                        "лута пиперка",
+                        "доматен сос",
+                        "спанаќ",
+                        "хопла",
+                        "песто од домати"
+                    ],
+                    "nutrition_values": [
+                        "Натриум",
+                        "Шеќер",
+                        "Диетални влакна",
+                        "Протеини",
+                        "Масти"
+                    ],
+                    "allergens": ["млеко", "сулфити", "глутен"],
+                    "price": 330,
+                    "discount": 15,
+                    "delivery": "достава",
+                    "rate": 5
+                },
+                {
+                    "id": 10,
+                    "chefId": 3,
+                    "recipe_name": "Тестенини со чили пиперки и говедско месо",
+                    "cuisine": "Италијанска",
+                    "icon_type": "паста",
+                    "meal_type": "главно јадење",
+                    "photo": "https://images.everyplate.com/c_fill,f_auto,fl_lossy,h_700,q_auto,w_1400/everyplate_s3/image/spicy-sausage-arrabiata-181be33b.jpg",
+                    "cook_time": "30 мин",
+                    "spicy": "многу луто",
+                    "available_portions": 0,
+                    "available": ["утре", "по нарачка"],
+
+                    "meal_info": "Уживајте во вкусот на овие тестенини потопени во доматен сос, чили пиперки и говедско месо",
+                    "main_ingredients": [
+                        "говедско месо",
+                        "магдонос",
+                        "кромид",
+                        "чили пиперки",
+                        "доматен сос",
+                        "пене"
+                    ],
+                    "nutrition_values": [
+                        "масти",
+                        "јаглехидрати",
+                        "шеќер",
+                        "холестерол",
+                        "протеини",
+                        "натриум"
+                    ],
+                    "allergens": ["глутен", "млеко", "сулфити"],
+                    "price": 270,
+                    "discount": 0,
+                    "delivery": "подигање",
+                    "rate": 5
+                },
+                {
+                    "id": 11,
+                    "chefId": 4,
+                    "recipe_name": "Ориз со сладок ѓумбир и пилешко",
+                    "cuisine": "Кинеска",
+                    "icon_type": "месо",
+                    "meal_type": "главно јадење",
+                    "photo": "https://images.everyplate.com/c_fill,f_auto,fl_lossy,h_700,q_auto,w_1400/everyplate_s3/image/sweet-ginger-chicken-rice-bowls-c7696f19.jpg",
+                    "cook_time": "25 мин",
+                    "spicy": "не лути",
+                    "available_portions": 10,
+                    "available": ["денес", "по нарачка"],
+
+                    "meal_info": "мбирот и слаткиот чили сос се обединуваат за да создадат претрупан слој за овој вкусен пилешко пржење. Пиперките, кромидот и варениот ориз се придружуваат на сочното пилешко за да создадат чинија со ориз што нема да ви дозволи да ја спуштите вилушката.",
+                    "main_ingredients": [
+                        "пилешко",
+                        "ориз",
+                        "ѓумбир",
+                        "кромид",
+                        "сладок чили сос",
+                        "лук",
+                        "пиперки"
+                    ],
+                    "nutrition_values": [
+                        "Јаглехидрати",
+                        "шеќер",
+                        "Протеини",
+                        "Холестерол",
+                        "Масти",
+                        "Натриум"
+                    ],
+                    "allergens": ["глутен", "сулфити"],
+                    "price": 320,
+                    "discount": 0,
+                    "delivery": "достава",
+                    "rate": 3
+                },
+                {
+                    "id": 12,
+                    "chefId": 4,
+                    "recipe_name": "Ориз со лосос во сос од кикирики",
+                    "cuisine": ["Риба", "Кинеска"],
+                    "icon_type": "месо",
+                    "meal_type": "главно јадење",
+                    "photo": "https://images.everyplate.com/c_fill,f_auto,fl_lossy,h_700,q_auto,w_1400/everyplate_s3/image/air-fryer-firecracker-salmon-bowls-7e4ce6a2.jpg",
+                    "cook_time": "40 мин",
+                    "spicy": "пикантно",
+                    "available_portions": 0,
+                    "available": ["по нарачка"],
+
+                    "meal_info": "Филетите од лосос се зачинуваат и се пржат, а потоа се сервираат над ориз од јасмин. Сос од кикиритки се прелива преку сè за да се засили вкусот",
+                    "main_ingredients": [
+                        "лосос",
+                        "ориз",
+                        "путер од кикирики",
+                        "ориз",
+                        "пикантен чили сос",
+                        "брокула",
+                        "мајонез"
+                    ],
+                    "nutrition_values": [
+                        "Јаглехидрати",
+                        "шеќер",
+                        "Протеини",
+                        "Холестерол",
+                        "Масти",
+                        "Натриум"
+                    ],
+                    "allergens": [
+                        "риба",
+                        "морска храна",
+                        "јатки",
+                        "соја",
+                        "глутен",
+                        "јајца",
+                        "млеко"
+                    ],
+                    "price": 470,
+                    "discount": 0,
+                    "delivery": "достава",
+                    "rate": 4
+                },
+                {
+                    "id": 13,
+                    "chefId": 4,
+                    "recipe_name": "Ракчиња во тика-сос и ориз",
+                    "cuisine": "Риба",
+                    "icon_type": "месо",
+                    "meal_type": "главно јадење",
+                    "photo": "https://images.everyplate.com/c_fill,f_auto,fl_lossy,h_700,q_auto,w_1400/everyplate_s3/image/shrimp-makhani-indian-style-butter-shrimp-9ce2d0a4.jpg",
+                    "cook_time": "45 мин",
+                    "spicy": "пикантно",
+                    "available_portions": 1,
+                    "available": ["денес", "по нарачка"],
+
+                    "meal_info": "Подгответе се да јадете со оваа вкусна чинија со ракчиња во стилот на тика масала. Оризот наполнет со цилантро прави миризлива основа, додека нашиот домашен леб со путер-лук е толку добар што нема да можете да одолеете!",
+                    "main_ingredients": [
+                        "ракчиња",
+                        "силантро",
+                        "лук",
+                        "хопла",
+                        "ориз",
+                        "кромид",
+                        "лук",
+                        "тика сос",
+                        "леб"
+                    ],
+                    "nutrition_values": [
+                        "масти",
+                        "протеини",
+                        "шеќер",
+                        "холестерол",
+                        "натриум",
+                        "заситени масти"
+                    ],
+                    "allergens": [
+                        "ракчиња",
+                        "морска храна",
+                        "соја",
+                        "глутен",
+                        "млеко"
+                    ],
+                    "price": 550,
+                    "discount": 0,
+                    "delivery": "достава",
+                    "rate": 5
+                },
+                {
+                    "id": 14,
+                    "chefId": 5,
+                    "recipe_name": "Брауни фаџ со морска сол",
+                    "cuisine": "Традиционална",
+                    "icon_type": "десерт",
+                    "meal_type": "десерт",
+                    "photo": "https://images.everyplate.com/c_fill,f_auto,fl_lossy,h_700,q_auto,w_1400/everyplate_s3/image/brown-butter-fudge-brownies-de68f5c1.jpg",
+                    "cook_time": "1 час",
+                    "spicy": "не лути",
+                    "available_portions": 12,
+                    "available": ["денес", "утре", "по нарачка"],
+
+                    "meal_info": "Оревен кафеав путер и ронлива морска сол! Овие брауни вредни за одмор имаат изобилство со непријатен вкус, совршени за комбинирање со ладна чаша млеко.",
+                    "main_ingredients": [
+                        "чоколадо",
+                        "путер",
+                        "какао",
+                        "сол",
+                        "јајце",
+                        "шеќер",
+                        "брашно"
+                    ],
+                    "nutrition_values": [
+                        "Масти",
+                        "Јаглехидрати",
+                        "Шеќер",
+                        "Холестерол"
+                    ],
+                    "allergens": ["млеко", "соја", "глутен", "јајца"],
+                    "price": 170,
+                    "discount": 10,
+                    "delivery": "подигање",
+                    "rate": 4
+                },
+                {
+                    "id": 15,
+                    "chefId": 6,
+                    "recipe_name": "Зачинета чорба од леблебија и сладок компир",
+                    "cuisine": "Индиска",
+                    "icon_type": "чорба",
+                    "meal_type": "главно јадење",
+                    "photo": "https://images.everyplate.com/c_fill,f_auto,fl_lossy,h_700,q_auto,w_1400/everyplate_s3/image/spiced-chickpea-sweet-potato-stew-9c94f403.jpg",
+                    "cook_time": "50 мин",
+                    "spicy": "пикантно",
+                    "available_portions": 2,
+                    "available": ["денес", "утре", "по нарачка"],
+
+                    "meal_info": "Слатки компири, кокосово млеко и зачини кари се спојуваат во ароматично јадење што е совршено задоволувачко за пријатна вечера.",
+                    "main_ingredients": [
+                        "наут",
+                        "кокосово млеко",
+                        "ѓумбир",
+                        "кромид",
+                        "леб",
+                        "сладок компир",
+                        "доматен сос",
+                        "кари"
+                    ],
+                    "nutrition_values": ["Јаглехидрати", "Масти", "Протеини"],
+                    "allergens": ["млеко", "соја", "глутен"],
+                    "price": 460,
+                    "discount": 20,
+                    "delivery": "достава",
+                    "rate": 4
+                },
+                {
+                    "id": 16,
+                    "chefId": 6,
+                    "recipe_name": "Хумус чорба со халуми сирење",
+                    "cuisine": "Индиска",
+                    "icon_type": "чорба",
+                    "meal_type": "предјадење",
+                    "photo": "https://images.everyplate.com/c_fill,f_auto,fl_lossy,h_700,q_auto,w_1400/everyplate_s3/image/halloumi-hummus-bowls-115b056a.jpg",
+                    "cook_time": "15 мин",
+                    "spicy": "пикантно",
+                    "available_portions": 0,
+                    "available": ["утре", "по нарачка"],
+
+                    "meal_info": "Овие живописни чинии имаат крцкаво, пржено во тавче халуми сирење, свеж зеленчук и хумус, сето тоа послужено преку задоволувачки бисерен кускус.",
+                    "main_ingredients": [
+                        "халуми",
+                        "хумус",
+                        "кускус",
+                        "домати",
+                        "спанаќ",
+                        "кромид"
+                    ],
+                    "nutrition_values": [
+                        "Јаглехидрати",
+                        "Протеини",
+                        "Холестерол",
+                        "Натриум"
+                    ],
+                    "allergens": ["сусам", "сулфити", "глутен", "млеко"],
+                    "price": 270,
+                    "discount": 0,
+                    "delivery": "достава",
+                    "rate": 4
+                }
+            ],
+            "reviews": [
+                {
+                    "id": 1,
+                    "recipeId": 1,
+                    "first_name": "Јана",
+                    "last_name": "Р.",
+                    "date_of_review": "27.01.2021",
+                    "reviewer_picture": "https://t4.ftcdn.net/jpg/03/30/25/97/360_F_330259751_tGPEAq5F5bjxkkliGrb97X2HhtXBDc9x.jpg",
+                    "rating": 4,
+                    "review": "Вкусен, топол оброк!"
+                },
+                {
+                    "id": 2,
+                    "recipeId": 1,
+                    "first_name": "Дејан",
+                    "last_name": "А.",
+                    "date_of_review": "10.10.2022",
+                    "reviewer_picture": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg",
+                    "rating": 4,
+                    "review": "Супер"
+                },
+                {
+                    "id": 3,
+                    "recipeId": 2,
+                    "first_name": "Ивана",
+                    "last_name": "М.",
+                    "date_of_review": "06.06.2022",
+                    "reviewer_picture": "https://media.istockphoto.com/id/1289220949/photo/successful-smiling-woman-wearing-eyeglasses-on-grey-wall.jpg?s=612x612&w=0&k=20&c=BjyPRn28F3mc6IiBCf4Ko-lFZisaNUYXBBnAcO47ZgE=",
+                    "rating": 5,
+                    "review": "Одлична пастрмајлија."
+                },
+                {
+                    "id": 4,
+                    "recipeId": 2,
+                    "first_name": "Теодора",
+                    "last_name": "К.",
+                    "date_of_review": "25.04.2021",
+                    "reviewer_picture": "https://img.freepik.com/free-photo/happiness-wellbeing-confidence-concept-cheerful-attractive-african-american-woman-curly-haircut-cross-arms-chest-self-assured-powerful-pose-smiling-determined-wear-yellow-sweater_176420-35063.jpg?w=2000",
+                    "rating": 2,
+                    "review": "многу мрсна."
+                },
+                {
+                    "id": 5,
+                    "recipeId": 3,
+                    "first_name": "Андреј",
+                    "last_name": "Л.",
+                    "date_of_review": "04.09.2022",
+                    "reviewer_picture": "https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?w=2000",
+                    "rating": 5,
+                    "review": "Тортата е одлична, вкусот беше идентичен како тортата на баба ми од детството. Одлична."
+                },
+                {
+                    "id": 6,
+                    "recipeId": 4,
+                    "first_name": "Лила",
+                    "last_name": "Д.",
+                    "date_of_review": "10.01.2023",
+                    "reviewer_picture": "https://media.istockphoto.com/id/1129638608/photo/smiling-businesswoman-looking-at-camera-webcam-make-conference-business-call.jpg?s=612x612&w=0&k=20&c=NH4ZQvdy7E8Gnen21e50zgKjbZzgNygnrVzCI0E3u9o=",
+                    "rating": 5,
+                    "review": "Феноменално!!!"
+                },
+                {
+                    "id": 7,
+                    "recipeId": 4,
+                    "first_name": "Драгана",
+                    "last_name": "Г.",
+                    "date_of_review": "11.01.2023",
+                    "reviewer_picture": "https://media.istockphoto.com/id/965523228/photo/young-long-haired-smiling-woman-in-white-shirt.jpg?s=612x612&w=0&k=20&c=BgoZuFOo7mVTuXM5JLfDrlzMfKvqjTFrzB5ZbPWzEBI=",
+                    "rating": 5,
+                    "review": "Многу вкусно, порцијата беше таман за добро да се најадеш!"
+                },
+                {
+                    "id": 8,
+                    "recipeId": 4,
+                    "first_name": "Стефан",
+                    "last_name": "Г.",
+                    "date_of_review": "03.01.2023",
+                    "reviewer_picture": "https://t4.ftcdn.net/jpg/02/14/74/61/360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg",
+                    "rating": 4,
+                    "review": "Вкусно ама не беше топло."
+                },
+                {
+                    "id": 9,
+                    "recipeId": 5,
+                    "first_name": "Тина",
+                    "last_name": "М",
+                    "date_of_review": "19.07.2021",
+                    "reviewer_picture": "https://www.shutterstock.com/image-photo/portrait-young-beautiful-cute-cheerful-260nw-666258808.jpg",
+                    "rating": 5,
+                    "review": "Супер."
+                },
+                {
+                    "id": 10,
+                    "recipeId": 6,
+                    "first_name": "Баска",
+                    "last_name": "М.",
+                    "date_of_review": "13.02.2022",
+                    "reviewer_picture": "https://www.shutterstock.com/image-photo/beautiful-young-woman-studio-looking-260nw-139247903.jpg",
+                    "rating": 3,
+                    "review": "несолено и недоварено"
+                },
+                {
+                    "id": 11,
+                    "recipeId": 7,
+                    "first_name": "Кико",
+                    "last_name": "М.",
+                    "date_of_review": "10.05.2022",
+                    "reviewer_picture": "https://www.shutterstock.com/image-photo/businessman-smiling-arms-crossed-on-260nw-2023023581.jpg",
+                    "rating": 5,
+                    "review": "супер паста"
+                },
+                {
+                    "id": 12,
+                    "recipeId": 7,
+                    "first_name": "Никола",
+                    "last_name": "Б.",
+                    "date_of_review": "25.01.2023",
+                    "reviewer_picture": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg",
+                    "rating": 5,
+                    "review": "Многу вкусно, оброкот беше топол и тазе!"
+                },
+                {
+                    "id": 13,
+                    "recipeId": 7,
+                    "first_name": "Симона",
+                    "last_name": "Л.",
+                    "date_of_review": "15.01.2023",
+                    "reviewer_picture": "https://t4.ftcdn.net/jpg/03/30/25/97/360_F_330259751_tGPEAq5F5bjxkkliGrb97X2HhtXBDc9x.jpg",
+                    "rating": 5,
+                    "review": "Една од најдобрите пасти кои сум ги јадела!"
+                },
+                {
+                    "id": 14,
+                    "recipeId": 8,
+                    "first_name": "Мони",
+                    "last_name": "К.",
+                    "date_of_review": "19.08.2022",
+                    "reviewer_picture": "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1600",
+                    "rating": 5,
+                    "review": "Многу поразлична пица од се` што досега имам пробано. Чиста 5ка."
+                },
+                {
+                    "id": 15,
+                    "recipeId": 8,
+                    "first_name": "Кристина",
+                    "last_name": "Ш.",
+                    "date_of_review": "19.10.2022",
+                    "reviewer_picture": "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                    "rating": 5,
+                    "review": "Превкусно!!!"
+                },
+                {
+                    "id": 16,
+                    "recipeId": 9,
+                    "first_name": "Зоки",
+                    "last_name": "М.",
+                    "date_of_review": "10.08.2021",
+                    "reviewer_picture": "https://static.toiimg.com/photo/83890830/83890830.jpg?v=3",
+                    "rating": 5,
+                    "review": "Интересни вкусови, топ!"
+                },
+                {
+                    "id": 17,
+                    "recipeId": 10,
+                    "first_name": "Нена",
+                    "last_name": "М.",
+                    "date_of_review": "03.12.2022",
+                    "reviewer_picture": "https://www.shutterstock.com/image-photo/beautiful-young-woman-looking-happy-260nw-2024793809.jpg",
+                    "rating": 5,
+                    "review": "Одлично."
+                },
+                {
+                    "id": 18,
+                    "recipeId": 11,
+                    "first_name": "Ема",
+                    "last_name": "Ј.",
+                    "date_of_review": "24.01.2023",
+                    "reviewer_picture": "https://www.shutterstock.com/image-photo/nice-armenian-curlyhaired-girl-bragging-260nw-1625845927.jpg",
+                    "rating": 4,
+                    "review": "Вкусно ама порцијата не ме најаде."
+                },
+                {
+                    "id": 19,
+                    "recipeId": 11,
+                    "first_name": "Маја",
+                    "last_name": "М.",
+                    "date_of_review": "13.11.2022",
+                    "reviewer_picture": "https://www.shutterstock.com/image-photo/pensive-goodlooking-daring-young-modern-260nw-1535688140.jpg",
+                    "rating": 3,
+                    "review": "Недоволна количина пилешко, имаше само пиперки и ориз"
+                },
+                {
+                    "id": 20,
+                    "recipeId": 12,
+                    "first_name": "Горан",
+                    "last_name": "Л",
+                    "date_of_review": "07.07.2022",
+                    "reviewer_picture": "https://www.shutterstock.com/image-photo/portrait-mature-businessman-wearing-glasses-260nw-738242395.jpg",
+                    "rating": 4,
+                    "review": "Вкусен оброк ама лососот требало уште да се готви"
+                },
+                {
+                    "id": 21,
+                    "recipeId": 13,
+                    "first_name": "Мими",
+                    "last_name": "Л.",
+                    "date_of_review": "16.09.2022",
+                    "reviewer_picture": "https://thumbs.dreamstime.com/b/portrait-good-looking-smiling-young-asian-female-student-went-abroad-study-see-world-grinning-joyfully-standing-casual-174841810.jpg",
+                    "rating": 5,
+                    "review": "топ"
+                },
+                {
+                    "id": 22,
+                    "recipeId": 13,
+                    "first_name": "Драган",
+                    "last_name": "А.",
+                    "date_of_review": "30.01.2023",
+                    "reviewer_picture": "https://www.shutterstock.com/image-photo/portrait-charming-mature-man-true-260nw-1571432695.jpg",
+                    "rating": 5,
+                    "review": "Топ вкусови"
+                },
+                {
+                    "id": 23,
+                    "recipeId": 14,
+                    "first_name": "Орце",
+                    "last_name": "Ц.",
+                    "date_of_review": "14.12.2022",
+                    "reviewer_picture": "https://www.shutterstock.com/image-photo/image-happy-brunette-man-wearing-260nw-1489874846.jpg",
+                    "rating": 4,
+                    "review": "Интересно ама мало парче"
+                },
+                {
+                    "id": 24,
+                    "recipeId": 15,
+                    "first_name": "Леа",
+                    "last_name": "А.",
+                    "date_of_review": "11.05.2022",
+                    "reviewer_picture": "https://thumbs.dreamstime.com/b/portrait-confident-asian-girl-smiling-pleased-cross-arms-chest-confident-pose-female-student-looking-upbeat-portrait-195482100.jpg",
+                    "rating": 5,
+                    "review": "Многу поразлично од се што сум пробала, одлично."
+                },
+                {
+                    "id": 25,
+                    "recipeId": 15,
+                    "first_name": "Симон",
+                    "last_name": "Г",
+                    "date_of_review": "12.11.2022",
+                    "reviewer_picture": "https://cdn.xxl.thumbs.canstockphoto.com/portrait-of-young-man-smiling-background-stock-photography_csp12568100.jpg",
+                    "rating": 2,
+                    "review": "Премногу измешани и јаки вкусови. Не би нарачала повторно"
+                },
+                {
+                    "id": 26,
+                    "recipeId": 15,
+                    "first_name": "Меглена",
+                    "last_name": "Л",
+                    "date_of_review": "03.12.2022",
+                    "reviewer_picture": "https://img.freepik.com/free-photo/indoor-shot-beautiful-happy-african-american-woman-smiling-cheerfully-keeping-her-arms-folded-relaxing-indoors-after-morning-lectures-university_273609-1270.jpg",
+                    "rating": 5,
+                    "review": "Секоја чест"
+                },
+                {
+                    "id": 27,
+                    "recipeId": 16,
+                    "first_name": "Ангела",
+                    "last_name": "М.",
+                    "date_of_review": "22.03.2022",
+                    "reviewer_picture": "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                    "rating": 4,
+                    "review": "Чуден ама интересен вкус"
+                }
+            ]
+        }
+    ]
+}

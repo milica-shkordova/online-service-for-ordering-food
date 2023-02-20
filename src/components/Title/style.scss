@@ -1,0 +1,24 @@
+@use "../../style/variables" as var;
+@use "../../style/mixins" as mix;
+
+.titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 80px;
+    margin-top: 20px;
+
+    hr {
+        width: 100px;
+        border: 1px solid var.$text-color-tertiary;
+        opacity: 0.8;
+    }
+
+    p {
+        margin: 0 10px;
+        font-family: var.$font-family-primary;
+        font-size: var.$heading-size-medium;
+        padding: 0 10px;
+    }
+}

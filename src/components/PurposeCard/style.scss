@@ -1,0 +1,28 @@
+@use "../../style/variables" as var;
+@use "../../style/mixins" as mix;
+@use "sass:math";
+
+.purposeCard {
+    flex-basis: 28%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+
+    img {
+        width: 100%;
+    }
+
+    .purpose-title {
+        font-size: var.$heading-size-small;
+        font-family: var.$font-family-primary;
+        padding: math.div(var.$gutter-base, 1.5) 0px;
+    }
+
+    .purpose-info {
+        text-align: center;
+        margin-bottom: var.$gutter-base * 3.2;
+    }
+}

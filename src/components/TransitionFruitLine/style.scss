@@ -1,0 +1,24 @@
+@use "../../style/variables" as var;
+@use "../../style/mixins" as mix;
+
+.transitionFruitLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var.$gutter-base * 2;
+
+    hr {
+        flex-basis: 44%;
+    }
+
+    .img {
+        flex-basis: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        img {
+            width: 80px;
+        }
+    }
+}

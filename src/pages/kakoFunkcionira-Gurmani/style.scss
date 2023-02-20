@@ -1,0 +1,106 @@
+@use "../../style/variables" as var;
+@use "../../style/mixins" as mix;
+@use "sass:math";
+
+.kakoFunkcioniraGurmani {
+    background-image: url(../../assets/images/bg-funkc.png);
+
+    .info-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo-pic {
+            width: 85px;
+            margin-top: var.$gutter-base * 2;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .titles {
+            p {
+                font-size: var.$heading-size-big;
+                padding: 0 var.$gutter-base * 1.5;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+
+            a {
+                text-decoration: none;
+
+                .org,
+                .grey {
+                    @extend %btn-orange;
+                    font-size: var.$font-size-base;
+                }
+
+                .org {
+                    padding: math.div(var.$gutter-base, 1.5) var.$gutter-base *
+                        2;
+                    position: absolute;
+                    right: -10px;
+                    top: 0px;
+                }
+
+                .grey {
+                    padding: math.div(var.$gutter-base, 1.5) var.$gutter-base *
+                        5 math.div(var.$gutter-base, 1.5) var.$gutter-base * 2;
+                    background-color: var.$text-color-senary;
+                    margin-right: var.$gutter-base * 3;
+                }
+            }
+        }
+
+        .infoGurmani {
+            padding: var.$gutter-base * 3.5 var.$gutter-base * 3.5
+                var.$gutter-base * 1.5;
+        }
+    }
+
+    .ourMissionAndVision {
+        .purposes {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
+    .howToJoinUs-cards {
+        width: 55%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: normal;
+    }
+
+    .meetOurChefs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 50px;
+
+        a {
+            margin: 0 auto;
+            text-decoration: none;
+
+            .toChefs {
+                @extend %btn-orange;
+                margin: 80px auto 50px auto;
+            }
+        }
+    }
+
+    .mostAskedQ {
+        margin-bottom: var.$gutter-base * 4;
+    }
+}

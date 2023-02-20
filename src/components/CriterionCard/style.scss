@@ -1,0 +1,26 @@
+@use "../../style/variables" as var;
+@use "../../style/mixins" as mix;
+@use "sass:math";
+
+.criterionCard {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var.$gutter-base * 4;
+
+    .picture,
+    .steps {
+        flex-basis: 50%;
+    }
+
+    .picture {
+        img {
+            width: 100%;
+        }
+    }
+
+    .steps {
+        padding-left: math.div(var.$gutter-base, 4);
+    }
+}
