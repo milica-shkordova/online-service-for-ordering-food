@@ -11,7 +11,6 @@ interface Props {
 }
 
 const Card: React.FC<Props> = ({ chef }) => {
-    console.log(chef.rating);
     return (
         <div className="card">
             <div className="picture-part">

@@ -17,7 +17,6 @@ interface Props {
     onClose: () => void;
     recipe: RecipeInfo;
 }
-
 const PopUpRecipe: React.FC<Props> = ({ recipe, onClose }) => {
     const mealInformation = [
         {
