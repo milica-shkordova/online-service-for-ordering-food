@@ -11,7 +11,7 @@ import { useParams } from "react-router-dom";
 import { useContextList } from "../../context/ContextChefList";
 import { ReviewInfo } from "../../interfaces/interfaces";
 import { renderCuisineIcons } from "../../helpers/renderCuisineIcons";
-import { EmailShareButton } from "react-share";
+import { EmailShareButton, FacebookShareButton } from "react-share";
 import { extendedWeekDay } from "../../constants/constants";
 
 const ChefHomepage = () => {
@@ -81,12 +81,15 @@ const ChefHomepage = () => {
                     <div className="chefBio">
                         <div className="name-share">
                             <p className="chefName">{`${chosenChef[0].first_name} ${chosenChef[0].last_name}`}</p>
-                            <EmailShareButton url="www.jadidomashno.com.mk">
+                            <FacebookShareButton
+                                quote="За сите љубители на добра хрana!"
+                                url="jadidomashno.com.mk"
+                            >
                                 <div className="share">
                                     <img src={shareImg} alt="share" />
                                     <span>сподели</span>
                                 </div>
-                            </EmailShareButton>
+                            </FacebookShareButton>
                         </div>
                         <div className="cuisineInfo">
                             <div className="iconChef">
@@ -101,10 +104,10 @@ const ChefHomepage = () => {
                                     <p> 300m</p>
                                 </div>
                             </div>
-                            <div className="fullAddress">
+                            {/* <div className="fullAddress">
                                 <i className="fa-solid fa-location-dot"></i>
                                 <p>Види точна адреса</p>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="statisticsInfo">
                             <div className="beigeBtn">
@@ -124,10 +127,12 @@ const ChefHomepage = () => {
                     </div>
                     <div className="questions">
                         <p>Имате прашања?</p>
-                        <div className="sendSms">
-                            <i className="fa-solid fa-message"></i>
-                            Прати порака на Готвачот
-                        </div>
+                        <EmailShareButton url="jadidomashno.com.mk">
+                            <div className="sendSms">
+                                <i className="fa-solid fa-message"></i>
+                                Прати порака на Готвачот
+                            </div>
+                        </EmailShareButton>
                     </div>
                 </div>
             )}

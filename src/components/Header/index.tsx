@@ -65,12 +65,6 @@ const Header = () => {
                         </p>
                     </li>
                 </Link>
-                <li className="icon">
-                    <div className="pic">
-                        <img src={ponuda} alt="ponuda-icon" />
-                    </div>
-                    <p>Побарај понуда</p>
-                </li>
                 <Link to="/meni">
                     <li className="icon" onClick={() => setActiveLink("menu")}>
                         <div className="pic">
@@ -81,13 +75,6 @@ const Header = () => {
                         </p>
                     </li>
                 </Link>
-
-                <li className="icon">
-                    <div className="pic">
-                        <img src={forum} alt="forum-icon" />
-                    </div>
-                    <p>Форум</p>
-                </li>
             </ul>
 
             <ul className="menu-right">

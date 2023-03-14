@@ -102,7 +102,6 @@ const PopUpRecipe: React.FC<Props> = ({ recipe, onClose }) => {
             <div className="content">
                 <div className="recipeInfo">
                     <div className="name">{recipe.recipe_name}</div>
-                    <button className="msg">Прати порака</button>
                 </div>
                 <div className="recipeIcons">
                     <div className="dish">
@@ -218,7 +217,6 @@ const PopUpRecipe: React.FC<Props> = ({ recipe, onClose }) => {
                         <p className="titlePart">
                             Локација за преземање на нарачка:
                         </p>
-                        <p className="meters-away">300 m оддалечено од тебе</p>
                     </div>
                     <div className="mapPic">
                         <img src={map} alt="map" />

@@ -213,7 +213,7 @@ const Meni = () => {
             <Title title="Мени" />
             <div className="calendar"></div>
             <div className="chooseMealType">
-                <i className="fa-solid fa-circle-chevron-left"></i>
+                {/* <i className="fa-solid fa-circle-chevron-left"></i> */}
                 <div className="menuChoice">
                     {menuFoodIcons.map((menuIcon) => (
                         <div
@@ -233,7 +233,7 @@ const Meni = () => {
                         </div>
                     ))}
                 </div>
-                <i className="fa-solid fa-circle-chevron-right"></i>
+                {/* <i className="fa-solid fa-circle-chevron-right"></i> */}
             </div>
             <div className="menu-preview">
                 <div className="filters">

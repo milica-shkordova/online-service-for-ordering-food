@@ -3,10 +3,9 @@
 @use "sass:math";
 
 .gotvachi {
-    background-image: url(../../assets/images/bg-gotvaci.svg);
+    background-image: url(../../assets/images/bg-gotvaci.png);
     background-position-x: right;
     background-repeat: no-repeat;
-    margin-bottom: var.$gutter-base * 4;
 
     .titles {
         padding-top: var.$gutter-base * 3;
